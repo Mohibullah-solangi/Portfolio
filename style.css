@@ -16,6 +16,7 @@ nav {
     background-color: rgb(17, 17, 59);
     color: white;
     height: 80px;
+    /* gap: 50rem; */
     
 }
 nav button{
@@ -24,19 +25,152 @@ nav button{
 
 nav ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
+    gap: 2rem;
     
     
 }
 
 nav ul li{
     list-style: none;
-    margin: 0 25px;
+   
+    /* margin: 0 25px; */
     
 }
  nav ul li a{
     text-decoration: none;
     color: white;
+    
+    
+}
+
+.container{
+
+    padding: 0 50px;
+}
+
+
+.left {
+
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.firstsect {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+    gap: 2rem;
+}
+
+.leftfirstsect {
+
+    width: 30%;
+    font-size: 2rem;
+
+}
+
+.rightfirstsect img {
+
+    width: 80%;
+    padding: 0 50px;
+
+}
+
+#element{
+    color: yellow;
+}
+
+.section_header{
+    display: flex;
+    align-items: center;
+}
+
+.section_header h1{
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.numbers{
+    font-size: small;
+    color: rgb(148, 148, 8);
+}
+
+.section_header::after{
+    display: inline-block;
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: yellow;
+}
+
+
+.tech{
+    padding: 2rem 10rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+
+}
+.tech figure{
+    
+    width: 100%;
+}
+
+figcaption{
+    text-indent: 10px;
+    
+}
+
+.section_container{
+
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 10rem;
+}
+.section_container *{
+    
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20% 20% 0 20%;
+   
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    gap: 1.5rem;
+    
+     
+}
+aside a img{
+    width: auto;
+    height: 20px;
+    background-color: yellow;
+}
+
+aside::after{
+    content: "";
+    width: 2px;
+    height: 10em;
+    background-color: rgb(130, 130, 4)
+}
+
+
+footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: rgb(17, 17, 59);
     
 }
 
@@ -49,6 +183,55 @@ nav ul li{
     }
     nav button{
           display: flex;
-          justify-self: start;
+         
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .firstsect {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px 0;
+        gap: 2rem;
+    }
+
+    .leftfirstsect {
+
+        width: 80%;
+        font-size: 2rem;
+    
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .tech{
+        padding: 2rem 5rem;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    
+    }
+}
+
+
+@media only screen and (max-width: 425px){
+
+    aside{
+        display: none;
+    }
+
+    .tech{
+        padding: 2rem 1rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    
     }
 }

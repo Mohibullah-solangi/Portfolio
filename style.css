@@ -19,7 +19,7 @@ nav {
     /* gap: 50rem; */
     
 }
-nav button{
+.mobile_menu{
     display: none;
 }
 
@@ -43,6 +43,11 @@ nav ul li{
     
     
 }
+
+.side_menu{
+    transform: rotate(90deg);
+}
+
 
 .container{
 
@@ -146,7 +151,7 @@ figcaption{
     padding: 1rem;
     background-color: aliceblue;
     color: black;
-    border-radius: 20% 20% 0 20%;
+    border-radius: 15px;
     font-size: small;
    
 }
@@ -218,8 +223,11 @@ footer {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    padding: 3em 0;
+    padding: 3em 0;  
     
+}
+#footer_menu a img{
+   height: 25px;
     
 }
 
@@ -237,6 +245,7 @@ footer {
 .footer_menu_container a{
     text-decoration: none;
     color: white;
+    font-size: small;
 }
 
 #footer_menu img{
@@ -260,19 +269,24 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    nav div{
-        display: none;
+    
+
+    nav{
+        justify-content: flex-start;
+        padding: 0 2rem;
     }
     nav ul{
         display: none;
     }
-    nav button{
+    .mobile_menu{
           display: flex;
-         
+                 
     }
-}
+    
 
-@media only screen and (max-width: 768px){
+     #logo{
+        display: none;
+    }
 
     .firstsect {
 
@@ -290,18 +304,6 @@ footer {
         font-size: 2rem;
     
     }
-}
-@media only screen and (max-width: 425px){
-
-  
-    .rightfirstsect img {
-
-        width: 80%;
-        padding: 0 20px;
-    
-    }
-}
-@media only screen and (max-width: 768px){
 
     .tech{
         padding: 2rem 5rem;
@@ -311,7 +313,12 @@ footer {
         gap: 2em;
     
     }
+    .section_container{
+
+        padding: 2rem 2rem;
+    }
 }
+
 
 
 @media only screen and (max-width: 600px){
@@ -337,6 +344,37 @@ footer {
         text-indent: 10px;
         
     }
+    .rightfirstsect img {
+
+        width: 80%;
+        padding: 0 20px;
+    
+    }
+
+    #project{
+        
+        padding: 2rem 2rem;
+    }
+    
+    
+    
+    #project img{
+       
+        padding: 0;
+    }
+
+    .footer_menu_container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+        
+    }
+    .leftfirstsect {
+
+        width: 80%;
+        font-size: 1.5rem;
+    
+    }
 
     
 }
@@ -354,13 +392,6 @@ footer {
     }
 }
 
-@media only screen and (max-width: 768px){
-
-    .section_container{
-
-        padding: 2rem 2rem;
-    }
-}
 @media only screen and (max-width: 600px){
 
     .section_container{
@@ -369,19 +400,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 768px){
-    #project{
-        
-        /* padding: 2rem 2rem; */
-    }
-    
-    
-    
-    #project img{
-       
-        padding: 0;
-    }
-}
+
 
 @media only screen and (max-width: 425px){
     #project{

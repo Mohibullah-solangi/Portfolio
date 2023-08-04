@@ -191,7 +191,7 @@ aside{
 aside a img{
     width: auto;
     height: 20px;
-    background-color: yellow;
+    background-color: rgb(156, 156, 6);
 }
 
 aside::after{
@@ -252,6 +252,18 @@ footer {
     height: 30px;
 }
 
+
+@media only screen and (max-width: 1024px){
+
+    .section_container{
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 5rem;
+    }
+}
 
 @media only screen and (max-width){
     .container{
@@ -346,17 +358,10 @@ footer {
     }
     .rightfirstsect img {
 
-        width: 80%;
+        width: 90%;
         padding: 0 20px;
     
     }
-
-    #project{
-        
-        padding: 2rem 2rem;
-    }
-    
-    
     
     #project img{
        
@@ -366,43 +371,33 @@ footer {
     .footer_menu_container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        
+        padding: 2rem 0;
         
     }
     .leftfirstsect {
 
         width: 80%;
-        font-size: 1.5rem;
+        font-size: 1.2em;
     
     }
 
-    
-}
-
-@media only screen and (max-width: 1024px){
-
-    .section_container{
-
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+    .section_header{
         justify-content: center;
-       
-        gap: 2rem;
-        padding: 2rem 5rem;
     }
-}
-
-@media only screen and (max-width: 600px){
-
-    .section_container{
-
-        padding: 2rem 1rem;
+    .section_header h1{
+    
+        font-size: 1.5em;
     }
-}
-
-
-
-@media only screen and (max-width: 425px){
+    .section_header::after{
+        display: none;
+        content: "";
+        
+    }
+    #footer_menu{
+        
+        padding: 1em 0;  
+        
+    }
     #project{
         
         padding: 2rem 0rem;
@@ -412,5 +407,22 @@ footer {
         margin: 0 0 40px 0;
         padding: 0 0px;
     }
+    .firstsect {
+
+        margin: 40px 0;
+        padding: 0 0;
+    }
+
+    
+    .section_container{
+
+        padding: 2rem 0rem;
+    }
+
+    
 }
+
+
+
+
 

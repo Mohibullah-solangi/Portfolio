@@ -292,10 +292,29 @@ footer {
     }
     .mobile_menu{
           display: flex;
+          position: relative;
+          
                  
     }
-    
 
+    #mobile_nav{
+        background-color: rgb(17, 17, 59);
+        
+    }
+    #mobile_nav ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 46px;
+        background-color: rgb(17, 17, 59);
+        width: 60vh;
+        height: 70vh;
+        align-items: center;
+        padding: 5em 0;
+    
+    }
+    
      #logo{
         display: none;
     }

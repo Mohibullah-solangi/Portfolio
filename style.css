@@ -130,7 +130,12 @@ nav ul li{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
+    transition: transform 2s;
 
+}
+
+.tech:hover{
+     transform: scale(1.01);
 }
 .tech figure{
     
@@ -172,14 +177,14 @@ figcaption{
 
 #project{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     padding: 2rem 5rem;
-    
-    
+        
 }
 #project img{
-    width: 100%;
+    width: 95%;
+    margin-top: 2em;
 }
 
 aside{
@@ -256,6 +261,47 @@ footer {
     height: 30px;
 }
 
+#project figure figcaption{
+    font-size: x-small;
+    text-align: center;
+    padding: 0 5em;
+}
+
+#project figure img:hover{
+    cursor: pointer;
+}
+#Under-Construction{
+    font-size: small;
+    color: yellow;
+}
+
+#CV{
+    text-decoration: none;
+    font-size: medium;
+    color: yellow;
+    border: 0.5px solid yellow;
+    padding: 0.8em;
+    transition: background-color 1s;
+  
+}
+
+#CV:hover{
+    cursor: pointer;
+    background-color: rgb(160, 160, 39);
+    color: white;
+    
+
+}
+
+#Work div{
+    box-shadow: 5px 5px 5px grey;
+    transition: transform 1s;
+}
+
+
+#Work div:hover{
+    transform: scale(1.01);
+}
 
 @media only screen and (max-width: 1024px){
 
@@ -266,6 +312,14 @@ footer {
         justify-content: center;
         gap: 2rem;
         padding: 2rem 5rem;
+    }
+
+    #project{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        padding: 2rem 5rem;
+            
     }
 }
 
@@ -385,6 +439,7 @@ footer {
         padding: 0 20px;
     
     }
+   
     
     #project img{
        
@@ -442,7 +497,31 @@ footer {
         padding: 2rem 0rem;
     }
 
+#Work div{
+    font-size: small;
+}
+
+    #Work div p{
+    font-size: x-small;
+}
+
+#Contact p{
+    font-size: x-small;
+}
     
+.footer_first{
+    font-size: small;
+
+}
+
+#CV{
+    text-decoration: none;
+    font-size: x-small;
+    color: yellow;
+    border: 0.5px solid yellow;
+    padding: 0.8em;
+   
+}
 }
 
 

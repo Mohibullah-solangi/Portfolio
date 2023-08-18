@@ -180,8 +180,14 @@ figcaption{
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     padding: 2rem 5rem;
+    transition: transform 1s;
         
 }
+
+#project:hover{
+    transform: scale(1.02);
+}
+
 #project img{
     width: 95%;
     margin-top: 2em;
@@ -271,7 +277,7 @@ footer {
     cursor: pointer;
 }
 #Under-Construction{
-    font-size: small;
+    font-size: x-small;
     color: yellow;
 }
 
@@ -302,6 +308,8 @@ footer {
 #Work div:hover{
     transform: scale(1.01);
 }
+
+
 
 @media only screen and (max-width: 1024px){
 
